@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="TestID">
+  <metadata>
+    <meta content="cover-image" name="cover"/>
+    <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:title>Test Title</dc:title>
+      <dc:language>en-us</dc:language>
+      <dc:creator>Test Creator</dc:creator>
+      <dc:publisher>Test Publisher</dc:publisher>
+      <dc:subject>Test Subject</dc:subject>
+      <dc:date>2017-10-17</dc:date>
+      <dc:description>Test Description</dc:description>
+    </dc-metadata>
+    <x-metadata>
+      <output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8"/>
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item href="cover-image.gif" media-type="image/gif" id="cover-image"/>
+    <item href="contents.html" media-type="application/xhtml+xml" id="contents"/>
+    <item href="nav-contents.ncx" media-type="application/x-dtbncx+xml" id="nav-contents"/>
+
+
+    <item href="000000.html" media-type="application/xhtml+xml" id="0"/>
+
+    <item href="000001.html" media-type="application/xhtml+xml" id="1"/>
+
+
+
+    <item href="000002.html" media-type="application/xhtml+xml" id="2"/>
+
+    <item href="000003.html" media-type="application/xhtml+xml" id="3"/>
+
+
+  </manifest>
+  <spine toc="nav-contents">
+    <itemref idref="contents"/>
+
+
+        <itemref idref="0"/>
+
+        <itemref idref="1"/>
+
+
+
+        <itemref idref="2"/>
+
+        <itemref idref="3"/>
+
+
+  </spine>
+  <guide>
+    <reference href="contents.html" type="toc" title="Table of Contents"/>
+  </guide>
+</package>
