@@ -77,12 +77,12 @@ func TestGenerateOpf(t *testing.T) {
 	iss.prepare()
 
 	if err := iss.generateOpf(opf); err != nil {
-		t.Errorf("Error occured while generating OPF: %v", err)
+		t.Errorf("Error occurred while generating OPF: %v", err)
 	}
 
 	opfExpected, err := ioutil.ReadFile("test_samples/content.opf")
 	if err != nil {
-		t.Errorf("Error occured while reading sample OPF: %v", err)
+		t.Errorf("Error occurred while reading sample OPF: %v", err)
 	}
 
 	if !bytes.Equal(opf.Bytes(), opfExpected) {
@@ -121,12 +121,12 @@ func TestGenerateTableOfContents(t *testing.T) {
 	iss.prepare()
 
 	if err := iss.generateTableOfContents(contents); err != nil {
-		t.Errorf("Error occured while generating table of contents: %v", err)
+		t.Errorf("Error occurred while generating table of contents: %v", err)
 	}
 
 	contentsExpected, err := ioutil.ReadFile("test_samples/contents.html")
 	if err != nil {
-		t.Errorf("Error occured while reading sample table of contents: %v", err)
+		t.Errorf("Error occurred while reading sample table of contents: %v", err)
 	}
 
 	if !bytes.Equal(contents.Bytes(), contentsExpected) {
@@ -169,12 +169,12 @@ func TestGenerateNav(t *testing.T) {
 	iss.prepare()
 
 	if err := iss.generateNav(nav); err != nil {
-		t.Errorf("Error occured while generating nav: %v", err)
+		t.Errorf("Error occurred while generating nav: %v", err)
 	}
 
 	navExpected, err := ioutil.ReadFile("test_samples/nav-contents.ncx")
 	if err != nil {
-		t.Errorf("Error occured while reading sample nav: %v", err)
+		t.Errorf("Error occurred while reading sample nav: %v", err)
 	}
 
 	if !bytes.Equal(nav.Bytes(), navExpected) {
