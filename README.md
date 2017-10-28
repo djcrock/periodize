@@ -8,7 +8,7 @@ Go library to generate periodical .mobi files.
 
 ## Dependencies
 
-Periodize requires that the [kindlegen](www.amazon.com/kindleformat/kindlegen) executable be available in `PATH`.
+Periodize requires that the [kindlegen](https://www.amazon.com/kindleformat/kindlegen) executable be available in `PATH`.
 
 ## Usage
 
