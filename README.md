@@ -1,4 +1,8 @@
 # Periodize
+
+[![Build Status](https://travis-ci.org/djcrock/periodize.svg?branch=master)](https://travis-ci.org/djcrock/periodize)
+[![Go Report Card](https://goreportcard.com/badge/github.com/djcrock/periodize)](https://goreportcard.com/report/github.com/djcrock/periodize)
+
 Go library to generate periodical .mobi files.
 
 ## Usage
